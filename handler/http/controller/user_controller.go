@@ -5,8 +5,8 @@ import (
 
 	"github.com/golang-jwt/jwt"
 	"github.com/labstack/echo/v4"
-	"github.com/myApp/domain"
-	"github.com/myApp/model"
+	"github.com/maabodi/goApp/domain"
+	"github.com/maabodi/goApp/model"
 )
 
 type UserController struct {

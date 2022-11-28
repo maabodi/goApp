@@ -1,11 +1,11 @@
 package http
 
 import (
-	"github.com/myApp/config"
-	"github.com/myApp/database"
-	co "github.com/myApp/handler/http/controller"
-	"github.com/myApp/repository"
-	"github.com/myApp/service"
+	"github.com/maabodi/goApp/config"
+	"github.com/maabodi/goApp/database"
+	co "github.com/maabodi/goApp/handler/http/controller"
+	"github.com/maabodi/goApp/repository"
+	"github.com/maabodi/goApp/service"
 
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"

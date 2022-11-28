@@ -3,8 +3,8 @@ package repository
 import (
 	"fmt"
 
-	"github.com/myApp/domain"
-	"github.com/myApp/model"
+	"github.com/maabodi/goApp/domain"
+	"github.com/maabodi/goApp/model"
 	"gorm.io/gorm"
 )
 

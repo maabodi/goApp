@@ -3,8 +3,8 @@ package database
 import (
 	"fmt"
 
-	"github.com/myApp/config"
-	"github.com/myApp/model"
+	"github.com/maabodi/goApp/config"
+	"github.com/maabodi/goApp/model"
 
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"

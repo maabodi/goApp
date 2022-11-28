@@ -1,7 +1,7 @@
 package domain
 
 import (
-	"github.com/myApp/model"
+	"github.com/maabodi/goApp/model"
 )
 
 type UserAdapterRepository interface {

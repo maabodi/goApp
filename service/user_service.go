@@ -3,10 +3,10 @@ package service
 import (
 	"net/http"
 
-	"github.com/myApp/config"
-	"github.com/myApp/domain"
-	"github.com/myApp/helper"
-	"github.com/myApp/model"
+	"github.com/maabodi/goApp/config"
+	"github.com/maabodi/goApp/domain"
+	"github.com/maabodi/goApp/helper"
+	"github.com/maabodi/goApp/model"
 )
 
 type svcUser struct {
