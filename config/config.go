@@ -11,11 +11,11 @@ type Config struct {
 
 func InitConfiguration() Config {
 	return Config{
-		DB_USERNAME: "root",
-		DB_PASSWORD: "root",
+		DB_USERNAME: "dikdik",
+		DB_PASSWORD: "Kurniawan757!",
 		DB_NAME:     "goapp",
 		DB_PORT:     "3306",
-		DB_HOST:     "localhost",
+		DB_HOST:     "178.128.209.164",
 		JWT_KEY:     "rahasia",
 	}
 }
