@@ -1,8 +1,8 @@
 package main
 
 import (
-	"net"
 	"net/http"
+	"os"
 
 	"github.com/labstack/echo/v4"
 	conf "github.com/maabodi/goApp/config"
@@ -20,12 +20,7 @@ func main() {
 		return c.String(http.StatusOK, "untuk akses swaggernya bisa diakses dibawah ini. \n\n '.../swagger/index.html#/auth/login'")
 	})
 	rest.RegisterUserAPI(e, config)
-	// e.Logger.Fatal(e.Start(":1323"))
 
-	l, err := net.Listen("tcp", ":1323")
-	if err != nil {
-		e.Logger.Fatal(err)
-	}
-	e.Listener = l
-	e.Logger.Fatal(e.Start(""))
+	port := os.Getenv("PORT")
+	e.Logger.Fatal(e.Start(":" + port))
 }
