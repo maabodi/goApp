@@ -1,6 +1,7 @@
 package main
 
 import (
+	"net"
 	"net/http"
 
 	"github.com/labstack/echo/v4"
@@ -19,5 +20,12 @@ func main() {
 		return c.String(http.StatusOK, "untuk akses swaggernya bisa diakses dibawah ini. \n\n '.../swagger/index.html#/auth/login'")
 	})
 	rest.RegisterUserAPI(e, config)
-	e.Logger.Fatal(e.Start(":1323"))
+	// e.Logger.Fatal(e.Start(":1323"))
+
+	l, err := net.Listen("tcp", ":1323")
+	if err != nil {
+		e.Logger.Fatal(err)
+	}
+	e.Listener = l
+	e.Logger.Fatal(e.Start(""))
 }
