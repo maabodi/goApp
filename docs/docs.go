@@ -21,14 +21,15 @@ func init() {
     swag.Register(SwaggerInfo.InstanceName(), SwaggerInfo)
 }
 
-const docTemplate = `{
+const docTemplate = `
+{
   "swagger": "2.0",
   "info": {
     "version": "1.0",
     "title": "goapp",
     "contact": {}
   },
-  "host": "localhost:1323",
+  "host": "golang-ku.herokuapp.com",
   "basePath": "/api",
   "securityDefinitions": {},
   "schemes": [
@@ -129,7 +130,6 @@ const docTemplate = `{
           "application/json"
         ],
         "parameters": [
-
           {
             "name": "Authorization",
             "in": "header",
@@ -189,4 +189,5 @@ const docTemplate = `{
       "description": ""
     }
   ]
-}`
+}
+`
